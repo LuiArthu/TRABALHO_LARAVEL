@@ -18,7 +18,7 @@ class AlunoController extends Controller
 
     public function store(Request $request)
     {
-        return 'Aluno criado com sucesso.'; // sem view, só processa e redireciona depois
+        return 'Aluno criado com sucesso.'; 
     }
 
     public function show($id)
