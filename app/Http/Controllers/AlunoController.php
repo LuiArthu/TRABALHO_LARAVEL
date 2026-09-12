@@ -4,7 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AlunoController extends Controller
+Route::get('/alunos', [AlunoController::class, 'index']);
+Route::get('/alunos/create', [AlunoController::class, 'create']);
+Route::post('/alunos', [AlunoController::class, 'store']);
+Route::get('/alunos/{id}', [AlunoController::class, 'show']);
+Route::get('/alunos/{id}/edit', [AlunoController::class, 'edit']);
+Route::put('/alunos/{id}', [AlunoController::class, 'update']);
+Route::delete('/alunos/{id}', [AlunoController::class, 'destroy']);
 {
     public function index()
     {
